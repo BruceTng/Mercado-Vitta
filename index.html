@@ -1,62 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercado Vitta | Tudo para sua casa</title>
-    <link rel="icon" href="./src/assets/VittaLogo.png">
+    <link rel="icon" href="./src/assets/logo/VittaLogo.png">
+    <title>Vitta | Tudo para sua Casa</title>
     <!-- CSS EXTERNO -->
      <link rel="stylesheet" href="./src/css/style.css">
     <!-- JS EXTERNO -->
-     <script src="./src/js/script.js"></script>
+     <script src="./src/js/script.js" defer></script>
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header>
-        <!-- Navegação entre tipos de compras -->
+        <!-- Navegação de Serviços -->
         <nav>
-            <ul class="compras">
-                <li>Shopping</li>
-                <li>Mercado</li>
-                <li>Drogaria</li>
-            </ul>
-            <ul class="servico">
-                <li>Atendimento</li>
-                <li>Trabalhe conosco</li>
-                <li>Ofertas</li>
-            </ul>
-        </nav>
-        <!-- Pesquisa e cadastro -->
-        <section>
-            <img src="imagem" id="logo">
-            <input type="text" placeholder="Procure seu produto aqui">
-            
-            <div id="Cadastro">
-                <img src="imagem">
-                <a href="./src/pages/cadastro.html">Entre ou Cadastre-se</a>
-            </div>
-            
-            <a>Carrinho</a>
-        </section>
-
-        <!-- Navegação secundaria -->
-        <nav>
-            <div class="menu-departamentos" id="menu-icone">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
             <ul>
-                <li>Cupons</li>
-                <li>Ofertas da Semana</li>
-                <li>Feira</li>
-                <li>Bebidas</li>
-                <li>Churrasco</li>
+                <li><a href="./src/pages/NavegacaoServico/Shopping.html">Shopping</a></li>
+                <li><a href="./src/pages/NavegacaoServico/Mercado.html">Mercado</a></li>
+                <li><a href="./src/pages/NavegacaoServico/Drogaria.html">Drogaria</a></li>
+                <li><a href="./src/pages/NavegacaoServico/Servicos.html">Serviços</a></li>
             </ul>
         </nav>
+        
+        <!-- Busca e Cadastro -->
+        <section>
+            <img id="logo" src="./src/assets/logo/VittaLogo.png">
+            
+            <div id="searchbox">
+                <input type="search" placeholder="Busque por produtos aqui">
+                <button>
+                    <img src="./src/assets/icones/pesquisar.gif">
+                </button>
+            </div>
+
+            <div id="cadastro">
+                <img src="./src/assets/icones/Pessoa.png">
+                <a href="./src/pages/BuscaCadastro/Cadastro.html">Entre ou Cadastre-se</a>
+            </div>
+
+            <div id="carrinho">
+                <a href="./src/pages/BuscaCadastro/Carrinho.html">
+                    <img src="icone">
+                    <span class="badge">0</span>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Navegação Secundária -->
+        <nav>
+            <ul>
+                <li><a href="./src/pages/NavegacaoSecundaria/Cupons.html">Cupons</a></li>
+                <li><a href="./src/pages/NavegacaoSecundaria/Despensa.html">Despensa cheia</a></li>
+                <li><a href="./src/pages/NavegacaoSecundaria/OfertasSemanais.html">Ofertas Semanais</a></li>
+                <li><a href="./src/pages/NavegacaoSecundaria/Feira.html">Feira</a></li>
+                <li><a href="./src/pages/NavegacaoSecundaria/Bebidas.html">Bebidas</a></li>
+                <li><a href="./src/pages/NavegacaoSecundaria/Churrasco.html">Churrasco</a></li>
+                <li><a href="./src/pages/NavegacaoSecundaria/Limpeza.html">Limpeza</a></li>
+            </ul>
+        </nav>
+
     </header>
     <main>
-
+        <div>
+            Banner
+        </div>
+        <section class="card">
+            <div>
+                
+            </div>
+        </section>
     </main>
+    <footer>
+      
+    </footer>
 </body>
 </html>
