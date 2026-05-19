@@ -1,0 +1,135 @@
+:root{
+    --branco-gelo:#E7E3E4;
+    --amarelo-limao:#C9CB3A;
+    --verde-oliva:#6A8F0A;
+    --azul-petroleo:#0A4D63;
+    --verde-musgo:#3A460F;
+}
+*{
+    box-sizing:border-box;
+    padding:0px;
+    margin:0px;
+    text-decoration:none;
+    list-style:none;
+    font-family:sans-serif;
+}
+
+/* Cabeçalho =/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=*/
+header{
+    text-align:center;
+    background-color:var(--verde-oliva);
+}
+
+/* nav | Navegação de Serviços ------------------------------------------------------------------------------------------------------------------------------------------*/
+.principal{
+    padding:1%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    background-color:var(--verde-musgo);
+}
+
+/* ul | Compras */
+.compras{
+    display:flex;
+    flex-direction:row;
+    gap:6%;
+}
+.compras li a{
+    color:var(--branco-gelo);
+}
+.compras li a:hover{
+    color:var(--amarelo-limao);
+    text-decoration:underline;
+}
+
+/* ul | Serviços */
+.servicos{
+    display:flex;
+    flex-direction:row;
+}
+.servicos li{
+    margin-right:20px;
+}
+.servicos li a{
+    color:var(--branco-gelo);
+}
+.servicos li a:hover{
+    color:var(--amarelo-limao);
+    text-decoration:underline;
+}
+
+/* section | Busca e Cadastro ------------------------------------------------------------------------------------------------------------------------------------------*/
+header section{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding-inline:5%;
+    align-items:center;
+}
+
+/* img | logo */
+#logo{
+   width:150px;
+}
+
+/* div | searchbox */
+#searchbox{
+    display:flex;
+    align-items:center;
+}
+#searchbox input{
+    width:700px;
+    height:55px;
+}
+#searchbox button{
+    width:55px;
+    height:55px;
+}
+
+
+/* Cadastro */
+#cadastro{
+    display:flex;
+    align-items:center;
+    padding:8px 14px;
+    border-radius:999px;
+    transition:0.2s ease;
+}
+#cadastro:hover{
+    text-decoration:underline;
+    background:rgba(0,0,0,0.15);
+}
+#cadastro img{
+    width:30px;
+}
+#cadastro a{
+    color:var(--branco-gelo);
+    padding:0px 5px;
+}
+
+
+/* Carrinho */
+#carrinho img{
+    width:30px;
+}
+#carrinho span{
+    color:var(--branco-gelo);
+}
+
+
+/* nav | Navegação Secundária ------------------------------------------------------------------------------------------------------------------------------------------*/
+.navsecundaria{
+    display:flex;
+    justify-content:center;
+    padding:0.7%;
+    background-color:var(--verde-musgo);
+}
+.navsecundaria ul{
+    display:flex;
+    flex-direction:row;
+    gap:100px;
+}
+.navsecundaria ul li a{
+    color:var(--branco-gelo)
+}

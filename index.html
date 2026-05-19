@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./src/assets/logo/VittaLogo.png">
+    <link rel="icon" href="./src/assets/logo/Vitta.png">
     <title>Vitta | Tudo para sua Casa</title>
     <!-- CSS EXTERNO -->
      <link rel="stylesheet" href="./src/css/style.css">
@@ -12,19 +12,31 @@
 </head>
 <body>
     <header>
-        <!-- Navegação de Serviços -->
-        <nav>
-            <ul>
-                <li><a href="./src/pages/NavegacaoServico/Shopping.html">Shopping</a></li>
-                <li><a href="./src/pages/NavegacaoServico/Mercado.html">Mercado</a></li>
-                <li><a href="./src/pages/NavegacaoServico/Drogaria.html">Drogaria</a></li>
-                <li><a href="./src/pages/NavegacaoServico/Servicos.html">Serviços</a></li>
-            </ul>
-        </nav>
+        
+        <!-- Navegação de Serviços -->    
+            <nav class="principal">
+                
+                <!-- Compras -->
+                <ul class="compras">
+                    <li><a href="./src/pages/NavegacaoServico/Compras/Shopping.html">SHOPPING</a></li>
+                    <li><a href="./src/pages/NavegacaoServico/Compras/Mercado.html">MERCADO</a></li>
+                    <li><a href="./src/pages/NavegacaoServico/Compras/Drogaria.html">DROGARIA</a></li>
+                    <li><a href="./src/pages/NavegacaoServico/Compras/Servicos.html">SERVIÇOS</a></li>
+                    <span id="vazio"></span>
+                </ul>
+                
+                <!-- Serviços -->
+                <ul class="servicos">
+                    <li><a href="./src/pages/NavegacaoServico/Servicos/Lojas.html">Nossas lojas</a></li>
+                    <li><a href="./src/pages/NavegacaoServico/Servicos/Atendimento.html">Atendimento</a></li>
+                    <li><a href="./src/pages/NavegacaoServico/Servicos/Beneficios.html">Benefícios Vitta</a></li>
+                    <li><a href="./src/pages/NavegacaoServico/Servicos/CartaoVitta.html">Faça seu cartão Vitta</a></li>
+                </ul>
+            </nav>   
         
         <!-- Busca e Cadastro -->
         <section>
-            <img id="logo" src="./src/assets/logo/VittaLogo.png">
+            <img id="logo" src="./src/assets/logo/VittaBranco.png">
             
             <div id="searchbox">
                 <input type="search" placeholder="Busque por produtos aqui">
@@ -40,14 +52,14 @@
 
             <div id="carrinho">
                 <a href="./src/pages/BuscaCadastro/Carrinho.html">
-                    <img src="icone">
+                    <img src="./src/assets/icones/carrinho.png">
                     <span class="badge">0</span>
                 </a>
             </div>
         </section>
         
         <!-- Navegação Secundária -->
-        <nav>
+        <nav class="navsecundaria">
             <ul>
                 <li><a href="./src/pages/NavegacaoSecundaria/Cupons.html">Cupons</a></li>
                 <li><a href="./src/pages/NavegacaoSecundaria/Despensa.html">Despensa cheia</a></li>
@@ -60,6 +72,8 @@
         </nav>
 
     </header>
+
+    <!-- Corpo principal -->
     <main>
         <div>
             Banner
@@ -70,6 +84,8 @@
             </div>
         </section>
     </main>
+
+    <!-- Roda pe -->
     <footer>
       
     </footer>
